@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Name</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			function myFunction() {
+			  let x = document.getElementById("myTopnav");
+			  if (x.className === "topnav") {
+				x.className += " responsive";
+			  } else {
+				x.className = "topnav";
+			  }
+			}
+		</script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">Home</a>
+            <a href="about.html" class="about">About</a>
+			<div class="dropdown">
+				<button class="dropbtn">Samarbejdspartnere
+					<i class="fa">&#xf0d7;</i> <!-- caret down -->
+				</button>
+				<div class="dropdown-content">
+					<p class="linkdesc"><em>Bemærk du forlader siden.</em></p>
+					<a href="https://www.ucn.dk/">UCNs hjemmeside</a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> <!-- burger menu -->
+		</div>
     </header>
-    
+
     <section class="main-content">
         <h1>Welcome to Our Company</h1>
         <p>This is a short exercise so that you can gain the knowledge, skills and confidence to use version control and set up a branching strategy.</p>

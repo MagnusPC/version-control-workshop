@@ -1,7 +1,7 @@
 /* Reset some default browser styles */
 body, h1, p {
-    margin: 0;
-    padding: 0;
+    align-self: center;
+    margin: 0 20% 10%;
 }
 
 /* Style the header and navigation */
@@ -38,3 +38,75 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/*Javascript*/
+.topnav {
+	overflow:hidden;
+}
+.topnav a {
+	display:block;
+	float:left;
+	padding: .5em;
+	color:#000;
+	text-align: center;
+	font-weight: bold; /* kun link fremhæves */
+	text-decoration: none;
+}
+.topnav .icon {
+	display:none;
+}
+.dropdown {
+	float:left;
+	/*font-weight: bold;*/
+	overflow:hidden;
+}
+.dropdown .dropbtn {
+	margin:0;
+	border:none;
+	padding:.5em;
+	outline:none;
+	background-color:inherit; /* anvender samme værdi som parent */
+	color:inherit;
+	font-family:inherit; /* dropbtn er som standard en knap, som ændres til at matche de øvrige font-værdier på siden */
+	font-size: inherit;
+}
+.dropdown-content {
+	display:none;
+	position:absolute;
+	background-color: #dcdcdc;
+	box-shadow: 2px 5px;
+	/* box-shadow: opacity:0.7; / wip */
+	z-index:1; /* placerer dropdownen forrest (såfremt andre elementer ikke har en højere værdi) */
+}
+.dropdown-content a {
+	display:block;
+	float:none;
+	border-bottom:solid #696969 1px;
+    padding: .25em .5em;
+    color:inherit; /* ændr til sort */
+	text-align:left;
+	text-decoration:none;
+}
+.topnav a:hover, .dropdown:hover, .dropdown-content a:hover .dropbtn {
+	background-color: #ffaa21;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.active {
+	background-color: #ffaa21; /* tetradic komplimentærfarve */
+	font-weight: bold;
+}
+.linkdesc {
+	padding-left:.5em;
+	padding-right:.5em;
+	color: #696969;
+	border-bottom:solid 2px #696969;
+	font-style: italic;
+}
+.icon {
+	font-size: 15px;
+}
+
+
+
